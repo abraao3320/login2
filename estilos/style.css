@@ -30,7 +30,7 @@ section#login{
     left: 50%;
     position: absolute;
     background-color: white;
-    width: 250px;
+    width: 260px;
     height: 500px;
     overflow: hidden;
 
@@ -40,6 +40,7 @@ section#login{
     transform: translate(-50% , -50%);
 
     transition: width .5s , height .5s;
+    transition-timing-function: ease;/*Efeito suavisante na mudança de tela*/
 }
 section#login > div#imagem{
     background-image: url(../imagens/img1.jpg);
@@ -53,4 +54,70 @@ section#login > div#formulario{
     padding: 10px;
     display: block;
     
+}
+
+div#formulario > h1{
+    text-align: center;
+    margin: 10px;
+
+}
+
+div#formulario > p{
+    font-size: 0.8em;
+    text-align: center;
+    
+}
+
+form > input[type=submit]{
+        display: block;
+        width: 100%;
+        font-size: 1em;
+        height: 40px;
+        background-color: #49a09d;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        
+    
+}
+
+form > input[type=submit]:hover{
+    background-color: #224d4b;
+    cursor: pointer;
+}
+
+form > .botao{
+    font-size: 1em;
+    border: 1px solid #224d4b;
+    background-color: #64dbd7;
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;  
+    margin-top: 7px;  
+    height: 40px;
+    color: #224d4b;
+    padding-top: 5px;
+}
+
+form > a.botao > span{
+    font-size: 0.8em;
+}
+
+form > a.botao:hover{
+    background-color: #6c7473;
+}
+
+form > div.campo{
+    background-color: #5f2c82;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+
+div.campo > label {
+    display: none;
 }
